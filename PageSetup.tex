@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%% PAGESETUP %%%%%%%%%%%%%%%%%%%%%%%%%
+% Document class
+\documentclass[12pt,a4paper]{report}
+% Alternative Options:
+%	Paper Size: a4paper / a5paper / b5paper / letterpaper / legalpaper / executivepaper
+% Duplex: oneside / twoside
+% Base Font Size: 10pt / 11pt / 12pt
+%%%%%%%%%%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc} % Bruges til at gengive bogstaver
+\usepackage{array} % Bruges til tabeller
+\usepackage{natbib} % Bruges til referencer
+\usepackage{graphicx} % Bruges til at indsætte billeder
+\graphicspath{{Images/}} %Specifies that all images are placed in the Images folder
+\usepackage{fancyhdr} % Bruges til headers og footers
+\usepackage{lastpage} % Bruges til at finde sidste sidetal
+\usepackage[danish]{babel} % Ændre standardfraser til dansk
+\usepackage{hyperref} % Bruges til at tilføje hyperlinks, also allows the use of \autoref{}
+\hypersetup{linktoc=all} 
+
+\usepackage[all]{hypcap} % Bruges til at linke til toppen af en figur
+\usepackage{pdfpages} % Bruges til at indlæse pdfer
+\usepackage{amsmath, amssymb, amsthm} % Math-stuffs
+\usepackage[a4paper, headheight=27.06pt]{geometry} % Sætter marginer i dokumentet
+\usepackage{microtype} % Gør teksten mere læsevenlig
+\usepackage{siunitx} % tillader at bruge \SI{10}{\hertz}
+\sisetup{per-mode=fraction,
+		 exponent-product=\cdot,
+		 range-units=single,
+		 range-phrase=\ til\ }
+		 
+\usepackage[parfill]{parskip} % Removes the indentation at new paragraphs
+\usepackage{mcode} % Used to input matlab figures, requires matlab code as well
+\lstset{inputencoding=utf8}
+
+\usepackage{float} % Allows the terrible use of [H] as a float identifier
+%%%%%%%%%%%%%%%%%%%%%%% END PAGESETUP %%%%%%%%%%%%%%%%%%%%%%%
+
+%Double underline for use in math problems
+\newcommand{\facit}[1]{\underline{\underline{#1}}}
+
+%Project specific commands
+\newcommand{\GFS}{\SI{44.1}{\kilo\hertz} }
+\newcommand{\GFN}{\SI{22.05}{\kilo\hertz} }
+\newcommand{\FS}{\SI{22.05}{\kilo\hertz} }
+\newcommand{\FN}{\SI{11.025}{\kilo\hertz} }
+\newcommand{\degree}{^{\circ}}
+
+%Approved/Dissaproved symbols
+\newcommand{\OK}{$\textcolor{green}{\checkmark}$}
+\newcommand{\NO}{$\textcolor{red}{\times}$}
+
+%Allows the use of * as \cdot in math
+\mathcode`\*="8000
+{\catcode`\*\active\gdef*{\cdot}}

@@ -1,0 +1,48 @@
+\input{PageSetup.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{FrontSetup.tex}
+%%%%%%%%%%%%%%%%%%%%% INSERT FRONT PAGE %%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\input{Forsider/FrontThree.tex}
+%%%%%%%%%%%%%%%%%%% END INSERT FRONT PAGE %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% HEADERS AND FOOTERS %%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{}
+\chead{DTU\\  \CourseNumber\ - \Course}
+\rhead{Chapter \thechapter}
+\lhead{\GroupNumber}
+\rfoot{Page \thepage/\pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%% END HEADERS AND FOOTERS %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\thispagestyle{fancy}
+\newpage
+%%%%%%%%%%%%%%%%%%% END TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% ACTUAL REPORT %%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%Section/Chapter without numbering on the page, but still added to the ToC
+\section*{Forord}
+\addcontentsline{toc}{chapter}{\protect\numberline{}Forord}%
+The part that goes in the section
+%END
+
+
+
+\input{Inspiration.tex}
+
+
+\chapter*{Konklusion}
+\setcounter{chapter}{9}
+\setcounter{section}{0}
+\addcontentsline{toc}{chapter}{\protect\numberline{}Konklusion}%
+\thispagestyle{fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Ud fra delkonklusionerne vurderes det, at filtrene der er lavet, fungere efter hensigten. Samtidigt fungere systemet til dels som ønsket, da ord indeholdende "d" eller "e" bliver fremhævet fra talestrømmen. Det vurderes dog, at det ikke passende måde, at implementere stemmegenkendelse, da der forefindes stor varians i frekvensindholdet af ord, alt efter udtale, stemmeleje, mm. 
+
+
+\end{document}

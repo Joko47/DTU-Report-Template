@@ -1,0 +1,77 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Blackman.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{560bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(0.9,0.75)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Figurer/Blackman.pdf}}%
+    \put(0.13,0.05276186){\makebox(0,0)[b]{\smash{0}}}%
+    \put(0.25917814,0.05276186){\makebox(0,0)[b]{\smash{200}}}%
+    \put(0.38835614,0.05276186){\makebox(0,0)[b]{\smash{400}}}%
+    \put(0.51753414,0.05276186){\makebox(0,0)[b]{\smash{600}}}%
+    \put(0.64671229,0.05276186){\makebox(0,0)[b]{\smash{800}}}%
+    \put(0.77589029,0.05276186){\makebox(0,0)[b]{\smash{1000}}}%
+    \put(0.90506843,0.05276186){\makebox(0,0)[b]{\smash{1200}}}%
+    \put(0.51785743,0.01780957){\makebox(0,0)[b]{\smash{Antal samples}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Figurer/Blackman.pdf}}%
+    \put(0.12047614,0.07485714){\makebox(0,0)[rb]{\smash{0}}}%
+    \put(0.12047614,0.13539471){\makebox(0,0)[rb]{\smash{0.1}}}%
+    \put(0.12047614,0.19593214){\makebox(0,0)[rb]{\smash{0.2}}}%
+    \put(0.12047614,0.25646957){\makebox(0,0)[rb]{\smash{0.3}}}%
+    \put(0.12047614,0.317007){\makebox(0,0)[rb]{\smash{0.4}}}%
+    \put(0.12047614,0.37754457){\makebox(0,0)[rb]{\smash{0.5}}}%
+    \put(0.12047614,0.438082){\makebox(0,0)[rb]{\smash{0.6}}}%
+    \put(0.12047614,0.49861957){\makebox(0,0)[rb]{\smash{0.7}}}%
+    \put(0.12047614,0.559157){\makebox(0,0)[rb]{\smash{0.8}}}%
+    \put(0.12047614,0.61969443){\makebox(0,0)[rb]{\smash{0.9}}}%
+    \put(0.12047614,0.680232){\makebox(0,0)[rb]{\smash{1}}}%
+    \put(0.051619,0.38857171){\rotatebox{90}{\makebox(0,0)[b]{\smash{Amplitude}}}}%
+    \put(0.51785771,0.70278571){\makebox(0,0)[b]{\smash{\textbf{Blackman vindue}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Figurer/Blackman.pdf}}%
+  \end{picture}%
+\endgroup%
